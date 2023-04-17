@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
@@ -14,6 +16,7 @@
     "eslint": "7.x",
     "eslint-config-airbnb-base": "14.x",
     "eslint-plugin-import": "2.x",
+    "gh-pages": "^5.0.0",
     "hint": "7.x",
     "postcss": "^8.4.21",
     "stylelint": "13.x",
