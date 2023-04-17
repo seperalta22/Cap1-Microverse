@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text {
+	background: url('https://images.unsplash.com/photo-1583248352195-d3a8e766edf2');
+	background-size: contain;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter: saturate(5);
+}
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.coco {
+	font-family: 'COCOGOOSE', sans-serif;
+}
