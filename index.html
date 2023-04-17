@@ -12,12 +12,95 @@
   </head>
 
   <body>
-    <h1 class="underline text-2xl text-naranja">Hola Mundo</h1>
-    <a href="./about.html">about</a>
-    <h2>Hello World</h2>
+    <header class="w-full absolute md:static">
+      <div class="flex items-center m-4 relative md:hidden">
+        <img src="assets/img/ham_menu.png" alt="menu" class="w-6 h-6" />
+      </div>
+    </header>
+    <main class="bg-mb_bg_img bg-cover bg-no-repeat h-[58vh] flex items-center justify-center">
+      <div class="p-5 mt-10">
+        <p class="text-xl text-naranja mb-1">"Hello! Developers world"</p>
+        <h1 class="text-2xl coco text leading-none uppercase">
+          Monsters of Code
+          Global Summit <br>
+          2023
+        </h1>
+        <div class="bg-grey">
+          <p class="w-auto bg-grey border-white border-2 mt-8 p-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            placeat est natus et ex repellendus ea, cum,
+            fugiat?
+          </p>
+        </div>
+        <h2 class="coco text-gris_darker text-xl mt-4">2023.1.5(THU) ~ 13(FRI)</h2>
+        <h4 class="text-[0.82rem]">
+          @ National Museum of Korea, Art Center Nabi and more
+        </h4>
+      </div>
+    </main>
 
+    <section class="bg-mb_program  text-white p-4" id="program">
+      <h3 class="under text-center mt-4 text-xl">Main Program</h3>
+      <ul class="mt-8 programs-items">
+        <li>
+          <div class="flex w-[40%] gap-4">
+            <img src="assets/img/lecture.svg" alt="lecture" />
+            <h4 class="text-naranja">Lecture</h4>
+          </div>
+          <p class="text-xs w-[60%]">
+            Listen to the speakers from various countries about the messeges of
+            sharing and opening.
+          </p>
+        </li>
+        <li>
+          <div class="flex w-[40%] gap-4">
+            <img class="" src="assets/img/screen.svg" alt="exhibition" />
+            <h4 class="text-naranja">Exhibition</h4>
+          </div>
+          <p class="text-xs w-[60%]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            voluptatum, nemo a ipsam?
+          </p>
+        </li>
+        <li>
+          <div class="flex w-[40%] gap-4">
+            <img class="" src="assets/img/forum.svg" alt="chat-group" />
+            <h4 class="text-naranja">Forum</h4>
+          </div>
+          <p class="text-xs w-[60%]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            voluptatum, nemo a ipsam?
+          </p>
+        </li>
+        <li>
+          <div class="flex w-[40%] gap-4">
+            <img class="icon" src="assets/img/code.svg" alt="workshop" />
+            <h4 class="text-naranja">Workshop</h4>
+          </div>
+          <p class="text-xs w-[60%]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            voluptatum, nemo a ipsam?
+          </p>
+        </li>
+        <li>
+          <div class="flex w-[40%] gap-4">
+            <img class="icon" src="assets/img/rocket.svg" alt="learn" />
+            <h4 class="text-naranja">Learn</h4>
+          </div>
+          <p class="text-xs w-[60%]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            voluptatum, nemo a ipsam?
+          </p>
+        </li>
+      </ul>
+      <button class="btn-prog" id="program-btn">
+        Join Monsters of Code 2023
+      </button>
+      <a href="#" class="hidden" id="see-program-link">See the whole program</a>
+    </section>
+    <section id="speakers">
 
-    <script type="module" src="js/main.js"></script>
+      <script type="module" src="js/main.js"></script>
   </body>
 
 </html>

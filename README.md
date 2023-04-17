@@ -11,7 +11,7 @@
   <br/>
   <br/>
 
-  <h1><b>Portfolio</b></h1>
+  <h1><b>Capstone1 - Monsters of Code</b></h1>
 
 </div>
 
