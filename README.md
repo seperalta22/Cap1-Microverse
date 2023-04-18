@@ -201,6 +201,8 @@ If you like this project, give it a ⭐️!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+Original design idea by Cindy Shin in [Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
 I would like to thank Microverse for giving me the opportunity to learn and grow as a developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

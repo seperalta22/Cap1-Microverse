@@ -5,6 +5,7 @@
 .text {
   background: url('https://images.unsplash.com/photo-1583248352195-d3a8e766edf2');
   background-size: contain;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: saturate(5);
@@ -25,11 +26,13 @@ body {
 .under::before {
   content: '';
   position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
   width: 2.5rem;
   height: 2px;
+  left: 50%;
   background: #ec5242;
   bottom: -10px;
-  margin-left: 10%;
 }
 
 .programs-items li {
@@ -48,4 +51,52 @@ body {
   padding: 1rem 2rem;
   margin: 2rem auto;
   margin-bottom: 1rem;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  width: 2.5rem;
+  height: 2px;
+  background: #ec5242;
+  bottom: -10px;
+}
+
+.speaker {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.image-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* .text-container {
+} */
+
+.speaker-image {
+  display: block;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.partners img {
+  filter: grayscale(100%);
 }
