@@ -11,7 +11,7 @@
   <br/>
   <br/>
 
-  <h1><b>Portfolio</b></h1>
+  <h1><b>Capstone1 - Monsters of Code 2023</b></h1>
 
 </div>
 
@@ -20,7 +20,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Portfolio ](#-portfolio-)
+- [📖 Monsters of Code 2023](#-monsters-of-code-2023)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -42,7 +42,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio <a name="about-project"></a>
+# 📖 Monsters of Code 2023<a name="about-project"></a>
 
 Portfolio is a project with great potential.
 
@@ -52,11 +52,13 @@ Portfolio is a project with great potential.
 
 - HTML
 - CSS
+- JS
 
 <details>
   <summary>Client</summary>
-   - HTML<br>
-   - CSS
+  - HTML<br>
+  - CSS <br>
+  - JS
 </details>
 
 <details>
@@ -77,7 +79,7 @@ Portfolio is a project with great potential.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://sergioperalta22.github.io/Portfolio/)
+- [Live Demo Link](https://sergioperalta22.github.io/Cap1-Microverse/)
 
 <!-- - No live demo available yet -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -91,43 +93,33 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 - A web browser
+- A code editor
+- A terminal
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/SergioPeralta22/Portfolio.git
+  git clone https://github.com/SergioPeralta22/Cap1-Microverse.git
 ```
 
 ### Install
 
 Install this project with:
 
-- an html project does not require installation
-<!--
-Example command:
-
 ```sh
-  cd my-project
-  gem install
+  cd my-project-folder
+  npm install
 ```
-
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-- use live server plugin.
-
-<!--
-Example command:
-
 ```sh
-  rails server
+  npm run dev
 ```
---->
 
 ### Run tests
 
@@ -147,15 +139,11 @@ Example command:
 
 You can deploy this project using:
 
-- Github Pages
-
-<!--
-Example:
-
 ```sh
+npm run predeploy
+npm run deploy
 
 ```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,23 +159,19 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Proyects Section** ✔️
-- **About me Section** ✔️
-- **Contact me Section** ✔️
+- **Pop-up window for the speakers section**
+- **Lenguage selection**
+- **More sections**
 
 ## Walkthrough <a name="walkthrough"></a>
 
-This [video](https://www.loom.com/share/5e95d8d2387a428ea26a70b9a102643c) explains why this project that started with BEM methodology, originally intended to be easily readable and reusable, ended up with an isolated class repeated 51 times because of Microverse code reviewers.
-I apologize for that, I assure you that I usually write better code.
-It also explains the future of this project.
+This [video](https://www.loom.com/share/139ed749f07b4419a2b1ea0901e7553f) shows the walkthrough of the project.
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,6 +184,8 @@ If you like this project, give it a ⭐️!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Original design idea by Cindy Shin in [Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 I would like to thank Microverse for giving me the opportunity to learn and grow as a developer.
 
