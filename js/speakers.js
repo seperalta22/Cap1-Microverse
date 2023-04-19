@@ -60,6 +60,7 @@ function createSpeakerElement(speaker) {
   const speakerImage = document.createElement('img');
   speakerImage.classList.add('speaker-image');
   speakerImage.src = speaker.image;
+  speakerImage.alt = speaker.name;
 
   const speakerName = document.createElement('h2');
   speakerName.classList.add('font-bold', 'text-lg', 'md:text-xl');
