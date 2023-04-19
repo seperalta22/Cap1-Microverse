@@ -16,10 +16,9 @@
       <nav class="flex items-center m-4 relative md:hidden" id="ham">
         <img src="assets/img/ham_menu.png" alt="hamburger-menu" class="w-6 h-6" />
       </nav>
-
       <div class="hidden md:block">
         <div class="bg-[#3e3e3e]">
-          <div class="container flex justify-end items-center gap-4 text-white p-2">
+          <nav class="container flex justify-end items-center gap-4 text-white p-2">
             <a href="#" class="text-white hover:brightness-50">
               <img src="./assets/img/facebook.svg" alt="facebook" class="w-4 h-4" />
             </a>
@@ -29,10 +28,8 @@
             <a href="#" class="ml-2 hover:text-naranja">English</a>
             <a href="#" class="ml-2 hover:text-naranja">My Page</a>
             <a href="#" class="ml-2 hover:text-naranja">Logout</a>
-          </div>
+          </nav>
         </div>
-
-
         <nav class="container p-2 flex items-center justify-between">
           <a href="./index.html">
             <img src="./assets/img/logo.svg" alt="logo" class="menu-logo w-40 saturate-200" />
@@ -51,9 +48,9 @@
         </nav>
       </div>
     </header>
-
+    <!-- mobile menu -->
     <nav class="mobile-menu">
-      <div class="menu-container">
+      <section class="menu-container">
         <img src="assets/img/x.svg" alt="close" class="mobile-menu-items" id="x" />
         <ul>
           <li class="mobile-menu-items">
@@ -64,24 +61,20 @@
             <a href="#program">Program</a>
           </li>
           <hr class="w-3/5 my-3 mx-8  text-gris_one" />
-
           <li class="mobile-menu-items">
             <a href="#join">Join</a>
           </li>
           <hr class="w-3/5 my-3 mx-8  text-gris_one" />
-
           <li class="mobile-menu-items">
             <a href="./about.html#sponsor">Sponsor</a>
           </li>
           <hr class="w-3/5 my-3 mx-8  text-gris_one" />
-
           <li class="mobile-menu-items">
             <a href="#speakers">News</a>
           </li>
           <hr class="w-3/5 my-3 mx-8  text-gris_one" />
-
         </ul>
-      </div>
+      </section>
     </nav>
 
     <main
@@ -132,7 +125,6 @@
         </li>
         <li class="md:flex-col hover:border-2">
           <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
-
             <img class="" src="assets/img/forum.svg" alt="chat-group" class="md:w-10" />
             <h4 class="text-naranja md:text-xl">Forum</h4>
           </div>
@@ -143,7 +135,6 @@
         </li>
         <li class="md:flex-col hover:border-2">
           <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
-
             <img class="icon" src="assets/img/code.svg" alt="workshop" class="md:w-10" />
             <h4 class="text-naranja md:text-xl">Workshop</h4>
           </div>
@@ -154,7 +145,6 @@
         </li>
         <li class="md:flex-col hover:border-2">
           <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
-
             <img class="icon" src="assets/img/rocket.svg" alt="learn" class="md:w-10" />
             <h4 class="text-naranja md:text-xl">Learn</h4>
           </div>
@@ -171,7 +161,9 @@
         the whole
         program</a>
     </section>
+
     <section class="pt-4 container" id="speakers"></section>
+
     <section class="partners-container hidden md:block bg-[#414246] py-4 md:py-10 md:text-2xl" id="sponsor">
       <h3 class="under text-center mt-4 text-xl text-white">Partner</h3>
       <section class="partners flex flex-wrap justify-center my-10">
@@ -182,17 +174,22 @@
         <img class="w-60" src="assets/img/cockroachlabs-ar21.svg" alt="cockroach" />
       </section>
     </section>
-    <footer class="container py-20 justify-between items-center gap-24 hidden md:flex">
-      <img src="assets/img/logo.svg" alt="logo" class="w-60" />
-      <div>
-        <h2 class="text-xl pb-4 font-bold">
-          2023 Monsters of Code.Some rights reserved.
-        </h2>
-        <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, cumque cupiditate
-          voluptatem minus
-          provident inventore voluptatum perspiciatis reiciendis omnis optio quos a consequatur cum delectus nesciunt
-          voluptate repellat? Eum, sunt.</p>
-      </div>
+
+    <footer class="p-8 md:py-20">
+      <section class=" gap-[15%] container justify-center items-center md:gap-24 flex">
+
+        <img src="assets/img/logo.svg" alt="logo" class="w-32 md:w-60" />
+        <div>
+          <h2 class="text-sm md:text-xl md:pb-4 md:font-bold">
+            2023 Monsters of Code.<br class="md:hidden">Some rights reserved.
+          </h2>
+          <p class="text-xl hidden md:block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, cumque
+            cupiditate
+            voluptatem minus
+            provident inventore voluptatum perspiciatis reiciendis omnis optio quos a consequatur cum delectus nesciunt
+            voluptate repellat? Eum, sunt.</p>
+        </div>
+      </section>
     </footer>
 
     <script type="module" src="js/main.js"></script>

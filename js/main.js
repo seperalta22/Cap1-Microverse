@@ -10,5 +10,10 @@ function showMobileMenu() {
 
 const ham = document.getElementById('ham');
 const x = document.getElementById('x');
+const closers = document.querySelectorAll('.mobile-menu-items');
 ham.addEventListener('click', showMobileMenu);
 x.addEventListener('click', hideMobileMenu);
+
+for (let i = 0; i < closers.length; i += 1) {
+  closers[i].addEventListener('click', hideMobileMenu);
+}
