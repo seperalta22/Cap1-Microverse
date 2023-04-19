@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
-    <title>About - Monster of Code 2023</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+        <title>About - Monster of Code 2023</title>
+    </head>
 
-</head>
-<body>
-    <h1 class="underline text-2xl text-naranja">About</h1>
-    <a href="./index.html">home</a>
-</body>
+    <body>
+        <header class="w-full absolute md:static">
+            <nav class="flex items-center m-4 relative md:hidden" id="ham">
+                <img src="assets/img/ham_menu.png" alt="hamburger-menu" class="w-6 h-6" />
+            </nav>
+
+            <div class="hidden md:block">
+                <div class="bg-[#3e3e3e]">
+                    <div class="container flex justify-end items-center gap-4 text-white p-2">
+                        <a href="#" class="text-white hover:brightness-50">
+                            <img src="./assets/img/facebook.svg" alt="facebook" class="w-4 h-4" />
+                        </a>
+                        <a href="#" class="desktop-right-menu-item hover:brightness-50">
+                            <img src="./assets/img/twitter.svg" alt="twitter" class="w-4 h-4 ">
+                        </a>
+                        <a href="#projects-section" class="ml-2 hover:text-naranja">Logout</a>
+                        <a href="#about-section" class="ml-2 hover:text-naranja">My Page</a>
+                        <a href="#contact-section" class="ml-2 hover:text-naranja">Korean</a>
+                    </div>
+                </div>
+
+
+                <nav class="container p-2 flex items-center justify-between">
+                    <a href="./index.html">
+                        <img src="./assets/img/logo.svg" alt="logo" class="menu-logo w-40" />
+                    </a>
+                    <ul class="flex items-center justify-between w-3/5 gap-4 text-gris_darker text-lg">
+                        <li class="hover:text-naranja hover:font-bold active:text-naranja">
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li class="hover:text-naranja hover:font-bold"><a href="#program">Program</a></li>
+                        <li class="hover:text-naranja hover:font-bold"><a href="#see-program-link">Join</a></li>
+                        <li class="hover:text-naranja hover:font-bold"><a href="#sponsor">Sponsor</a></li>
+                        <li class="hover:text-naranja hover:font-bold"><a href="#news">News</a></li>
+                        <li class="border-4 border-naranja p-2 px-4 text-naranja"><a href="">Buy a ticket</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav class="mobile-menu">
+            <div class="menu-container">
+                <img src="assets/img/x.svg" alt="close" class="mobile-menu-items" id="x" />
+                <ul>
+                    <li class="mobile-menu-items">
+                        <a href="./about.html">About</a>
+                    </li>
+                    <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+                    <li class="mobile-menu-items">
+                        <a href="#program">Program</a>
+                    </li>
+                    <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+
+                    <li class="mobile-menu-items">
+                        <a href="#see-program-btn">Join</a>
+                    </li>
+                    <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+
+                    <li class="mobile-menu-items">
+                        <a href="./about.html#sponsor">Sponsor</a>
+                    </li>
+                    <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+
+                    <li class="mobile-menu-items">
+                        <a href="#news">News</a>
+                    </li>
+                    <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+                </ul>
+            </div>
+        </nav>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+
 </html>

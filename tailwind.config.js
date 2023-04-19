@@ -14,6 +14,7 @@ export default {
     extend: {
       backgroundImage: {
         mb_bg_img: 'url(../assets/img/bg_main_mobile.png)',
+        dt_bg_img: 'url(../assets/img/desktop_bg.png)',
         mb_program: 'url(../assets/img/bg_program.png)',
       },
     },
