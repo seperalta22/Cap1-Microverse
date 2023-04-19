@@ -9,98 +9,171 @@
     <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     <title>Monster of Code 2023</title>
-    <script type="module" crossorigin src="/Cap1-Microverse/assets/index-f7282784.js"></script>
-    <link rel="stylesheet" href="/Cap1-Microverse/assets/index-2ac2d3d5.css">
+    <script type="module" crossorigin src="/Cap1-Microverse/assets/index-ca08475a.js"></script>
+    <link rel="stylesheet" href="/Cap1-Microverse/assets/index-98e8357c.css">
   </head>
 
   <body>
     <header class="w-full absolute md:static">
-      <div class="flex items-center m-4 relative md:hidden">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAqCAMAAADCkShIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMC1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyNENCNUEyRDZBNzQxMUVEQkU3RThGOUZGNzVCRUUwRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyNENCNUEyRTZBNzQxMUVEQkU3RThGOUZGNzVCRUUwRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI0Q0I1QTJCNkE3NDExRURCRTdFOEY5RkY3NUJFRTBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI0Q0I1QTJDNkE3NDExRURCRTdFOEY5RkY3NUJFRTBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+q2TnRgAAAAZQTFRFb29v////JFwlmwAAAAJ0Uk5T/wDltzBKAAAAI0lEQVR42mJgGAVDEzCSCEY10EbDKBjNQKMaRjPQUAcAAQYAzi8DAbGh+n4AAAAASUVORK5CYII=" alt="menu" class="w-6 h-6" />
+      <nav class="flex items-center m-4 relative md:hidden" id="ham">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAqCAMAAADCkShIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMC1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyNENCNUEyRDZBNzQxMUVEQkU3RThGOUZGNzVCRUUwRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyNENCNUEyRTZBNzQxMUVEQkU3RThGOUZGNzVCRUUwRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI0Q0I1QTJCNkE3NDExRURCRTdFOEY5RkY3NUJFRTBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI0Q0I1QTJDNkE3NDExRURCRTdFOEY5RkY3NUJFRTBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+q2TnRgAAAAZQTFRFb29v////JFwlmwAAAAJ0Uk5T/wDltzBKAAAAI0lEQVR42mJgGAVDEzCSCEY10EbDKBjNQKMaRjPQUAcAAQYAzi8DAbGh+n4AAAAASUVORK5CYII=" alt="hamburger-menu" class="w-6 h-6" />
+      </nav>
+
+      <div class="hidden md:block">
+        <div class="bg-[#3e3e3e]">
+          <div class="container flex justify-end items-center gap-4 text-white p-2">
+            <a href="#" class="text-white hover:brightness-50">
+              <img src="/Cap1-Microverse/assets/facebook-dd7aa58d.svg" alt="facebook" class="w-4 h-4" />
+            </a>
+            <a href="#" class="desktop-right-menu-item hover:brightness-50">
+              <img src="/Cap1-Microverse/assets/twitter-85e60958.svg" alt="twitter" class="w-4 h-4 ">
+            </a>
+            <a href="#" class="ml-2 hover:text-naranja">English</a>
+            <a href="#" class="ml-2 hover:text-naranja">My Page</a>
+            <a href="#" class="ml-2 hover:text-naranja">Logout</a>
+          </div>
+        </div>
+
+
+        <nav class="container p-2 flex items-center justify-between">
+          <a href="./index.html">
+            <img src="/Cap1-Microverse/assets/logo-6f6a294d.svg" alt="logo" class="menu-logo w-40 saturate-200" />
+          </a>
+          <ul class="flex items-center justify-between w-3/5 gap-4 text-gris_darker text-lg">
+            <li class="hover:text-naranja hover:font-bold active:text-naranja">
+              <a href="./about.html">About</a>
+            </li>
+            <li class="hover:text-naranja hover:font-bold"><a href="#program">Program</a></li>
+            <li class="hover:text-naranja hover:font-bold"><a href="#see">Join</a></li>
+            <li class="hover:text-naranja hover:font-bold"><a href="#sponsor">Sponsor</a></li>
+            <li class="hover:text-naranja hover:font-bold"><a href="#speakers">News</a></li>
+            <li class="border-4 border-naranja p-2 px-3 text-naranja hover:saturate-200"><a href="">Buy a ticket</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main class="bg-mb_bg_img bg-cover bg-no-repeat h-[58vh] flex items-center justify-center">
+
+    <nav class="mobile-menu">
+      <div class="menu-container">
+        <img src="/Cap1-Microverse/assets/x-fd3bf789.svg" alt="close" class="mobile-menu-items" id="x" />
+        <ul>
+          <li class="mobile-menu-items">
+            <a href="./about.html">About</a>
+          </li>
+          <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+          <li class="mobile-menu-items">
+            <a href="#program">Program</a>
+          </li>
+          <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+
+          <li class="mobile-menu-items">
+            <a href="#join">Join</a>
+          </li>
+          <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+
+          <li class="mobile-menu-items">
+            <a href="./about.html#sponsor">Sponsor</a>
+          </li>
+          <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+
+          <li class="mobile-menu-items">
+            <a href="#speakers">News</a>
+          </li>
+          <hr class="w-3/5 my-3 mx-8  text-gris_one" />
+
+        </ul>
+      </div>
+    </nav>
+
+    <main
+      class="bg-mb_bg_img bg-cover bg-no-repeat h-[58vh] md:bg-dt_bg_img md:h-[80vh] flex items-center justify-center">
       <div class="p-5 mt-10">
-        <p class="text-xl text-naranja mb-1">"Hello! Developers world"</p>
-        <h1 class="text-2xl coco text leading-none uppercase">
-          Monsters of Code
+        <p class="text-xl text-naranja mb-1 md:text-4xl md:mb-4">"Hello! Developers world"</p>
+        <h1 class="text-2xl coco text leading-none uppercase md:text-6xl">
+          Monsters of Code<br>
           Global Summit <br>
           2023
         </h1>
         <div class="bg-grey">
-          <p class="w-auto bg-grey border-white border-2 mt-8 p-4 text-sm">
+          <p class="w-auto bg-grey border-white border-2 mt-8 p-4 text-sm md:w-4/5 md:border-4 md:mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
             placeat est natus et ex repellendus ea, cum,
             fugiat?
           </p>
         </div>
-        <h2 class="coco text-gris_darker text-xl mt-4">2023.1.5(THU) ~ 13(FRI)</h2>
-        <h4 class="text-[0.82rem]">
+        <h2 class="coco text-gris_darker text-xl mt-4 md:text-2xl ">2023.1.5(THU) ~ 13(FRI)</h2>
+        <p class="text-[0.82rem]">
           @ National Museum of Korea, Art Center Nabi and more
-        </h4>
+        </p>
       </div>
     </main>
 
-    <section class="bg-mb_program  text-white p-4" id="program">
-      <h3 class="under text-center mt-4 text-xl">Main Program</h3>
-      <ul class="mt-8 programs-items">
-        <li>
-          <div class="flex w-[40%] gap-4">
-            <img src="/Cap1-Microverse/assets/lecture-e8eff07f.svg" alt="lecture" />
-            <h4 class="text-naranja">Lecture</h4>
+    <section class="bg-mb_program  text-white p-4 md:p-8" id="program">
+      <h3 class="under text-center mt-4 text-xl md:mb-12 md:text-2xl">Main Program</h3>
+      <ul class="mt-8 programs-items md:flex md:gap-1 md:w-4/5 md:mx-auto">
+        <li class="md:flex-col hover:border-2">
+          <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
+            <img src="/Cap1-Microverse/assets/lecture-e8eff07f.svg" alt="lecture" class="md:w-10" />
+            <h4 class="text-naranja md:text-xl">Lecture</h4>
           </div>
-          <p class="text-xs w-[60%]">
+          <p class="text-xs w-[60%] md:w-full md:text-center md:text-base">
             Listen to the speakers from various countries about the messeges of
             sharing and ope.
           </p>
         </li>
-        <li>
-          <div class="flex w-[40%] gap-4">
-            <img class="" src="/Cap1-Microverse/assets/screen-db3b49cc.svg" alt="exhibition" />
-            <h4 class="text-naranja">Exhibition</h4>
+        <li class="md:flex-col hover:border-2">
+          <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
+            <img class="" src="/Cap1-Microverse/assets/screen-db3b49cc.svg" alt="exhibition" class="md:w-10" />
+            <h4 class="text-naranja md:text-xl">Exhibition</h4>
           </div>
-          <p class="text-xs w-[60%]">
+          <p class="text-xs w-[60%] md:w-full md:text-center md:text-base">
             Lorem ipsum dolor sit amet cons ectetur, adipisicing elit.
             volup tatum, nemo a ipsam?
           </p>
         </li>
-        <li>
-          <div class="flex w-[40%] gap-4">
-            <img class="" src="/Cap1-Microverse/assets/forum-c4028a0e.svg" alt="chat-group" />
-            <h4 class="text-naranja">Forum</h4>
+        <li class="md:flex-col hover:border-2">
+          <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
+
+            <img class="" src="/Cap1-Microverse/assets/forum-c4028a0e.svg" alt="chat-group" class="md:w-10" />
+            <h4 class="text-naranja md:text-xl">Forum</h4>
           </div>
-          <p class="text-xs w-[60%]">
+          <p class="text-xs w-[60%] md:w-full md:text-center md:text-base">
             Lorem ipsum dolor sit amet cons ectetur, adipisicing elit.
             volup tatum, nemo a ipsam?
           </p>
         </li>
-        <li>
-          <div class="flex w-[40%] gap-4">
-            <img class="icon" src="/Cap1-Microverse/assets/code-e7383a24.svg" alt="workshop" />
-            <h4 class="text-naranja">Workshop</h4>
+        <li class="md:flex-col hover:border-2">
+          <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
+
+            <img class="icon" src="/Cap1-Microverse/assets/code-e7383a24.svg" alt="workshop" class="md:w-10" />
+            <h4 class="text-naranja md:text-xl">Workshop</h4>
           </div>
-          <p class="text-xs w-[60%]">
+          <p class="text-xs w-[60%] md:w-full md:text-center md:text-base">
             Lorem ipsum dolor sit amet cons ectetur, adipisicing elit.
             volup tatum, nemo a ipsam?
           </p>
         </li>
-        <li>
-          <div class="flex w-[40%] gap-4">
-            <img class="icon" src="/Cap1-Microverse/assets/rocket-55da10dc.svg" alt="learn" />
-            <h4 class="text-naranja">Learn</h4>
+        <li class="md:flex-col hover:border-2">
+          <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
+
+            <img class="icon" src="/Cap1-Microverse/assets/rocket-55da10dc.svg" alt="learn" class="md:w-10" />
+            <h4 class="text-naranja md:text-xl">Learn</h4>
           </div>
-          <p class="text-xs w-[60%]">
+          <p class="text-xs w-[60%] md:w-full md:text-center md:text-base">
             Lorem ipsum dolor sit amet cons ectetur, adipisicing elit.
             volup tatum, nemo a ipsam?
           </p>
         </li>
       </ul>
-      <button type="button" class="btn-prog" id="program-btn">
+      <button type="button" class="btn-prog hover:saturate-200 md:hidden" id="join">
         Join Monsters of Code 2023
       </button>
-      <a href="#"  class="hidden" id="see-program-link">See the whole program</a>
+      <a href="#" class="hidden text-center uppercase underline text-lg my-12 hover:text-naranja md:block " id="see">See
+        the whole
+        program</a>
     </section>
-    <section class="pt-4" id="speakers"></section>
+    <section class="pt-4 container" id="speakers"></section>
     <section class="partners-container hidden md:block bg-[#414246] py-4" id="sponsor">
       <h3 class="under text-center mt-4 text-xl text-white">Partner</h3>
       <section class="partners flex flex-wrap justify-center my-10">
