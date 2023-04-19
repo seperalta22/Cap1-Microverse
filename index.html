@@ -109,7 +109,7 @@
 
     <section class="bg-mb_program  text-white p-4 md:p-8" id="program">
       <h3 class="under text-center mt-4 text-xl md:mb-12 md:text-2xl">Main Program</h3>
-      <ul class="mt-8 programs-items md:flex md:gap-1 md:w-4/5 md:mx-auto">
+      <ul class="mt-8 programs-items md:flex md:gap-1 md:w-4/5 md:mx-auto container">
         <li class="md:flex-col hover:border-2">
           <div class="flex w-[40%] gap-4 md:flex-col md:w-full md:items-center">
             <img src="assets/img/lecture.svg" alt="lecture" class="md:w-10" />
@@ -172,16 +172,28 @@
         program</a>
     </section>
     <section class="pt-4 container" id="speakers"></section>
-    <section class="partners-container hidden md:block bg-[#414246] py-4" id="sponsor">
+    <section class="partners-container hidden md:block bg-[#414246] py-4 md:py-10 md:text-2xl" id="sponsor">
       <h3 class="under text-center mt-4 text-xl text-white">Partner</h3>
       <section class="partners flex flex-wrap justify-center my-10">
-        <img src="assets/img/amazon_aws-ar21.svg" alt="aws" />
-        <img src="assets/img/google-ar21.svg" alt="google" />
-        <img src="assets/img/mitedu-ar21.svg" alt="MIT" />
-        <img src="assets/img/netlify-ar21.svg" alt="netlify" />
-        <img src="assets/img/cockroachlabs-ar21.svg" alt="cockroach" />
+        <img class="w-60" src="assets/img/amazon_aws-ar21.svg" alt="aws" />
+        <img class="w-60" src="assets/img/google-ar21.svg" alt="google" />
+        <img class="w-60" src="assets/img/mitedu-ar21.svg" alt="MIT" />
+        <img class="w-60" src="assets/img/netlify-ar21.svg" alt="netlify" />
+        <img class="w-60" src="assets/img/cockroachlabs-ar21.svg" alt="cockroach" />
       </section>
     </section>
+    <footer class="container py-20 justify-between items-center gap-24 hidden md:flex">
+      <img src="assets/img/logo.svg" alt="logo" class="w-60" />
+      <div>
+        <h2 class="text-xl pb-4 font-bold">
+          2023 Monsters of Code.Some rights reserved.
+        </h2>
+        <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, cumque cupiditate
+          voluptatem minus
+          provident inventore voluptatum perspiciatis reiciendis omnis optio quos a consequatur cum delectus nesciunt
+          voluptate repellat? Eum, sunt.</p>
+      </div>
+    </footer>
 
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/speakers.js"></script>
